@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="ru" data-theme="dark" data-breed="russian-blue">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Cat Atlas</title>
+  <meta name="description" content="" />
+
+  <meta property="og:title" content="" />
+  <meta property="og:description" content="" />
+  <meta property="og:type" content="article" />
+  <meta property="og:image" content="" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../assets/styles.css" />
+  <script type="application/ld+json" id="jsonld">{}</script>
+  <script type="module" src="../assets/breed-page.js"></script>
+</head>
+
+<body>
+  <a class="skip" href="#content">Skip</a>
+
+  <header class="header">
+    <div class="container header__row">
+      <a class="brand" href="../index.html">
+        <span class="brand__mark" aria-hidden="true"></span>
+        <span class="brand__text">Cat Atlas</span>
+      </a>
+
+      <button class="navbtn" type="button" data-nav-toggle aria-expanded="false" aria-controls="nav">Menu</button>
+
+      <nav class="nav" id="nav" aria-label="Navigation">
+        <a href="../index.html">
+          <span data-lang="ru">Топ‑10</span><span data-lang="en" hidden>Top 10</span>
+        </a>
+        <a href="../about.html">
+          <span data-lang="ru">О проекте</span><span data-lang="en" hidden>About</span>
+        </a>
+      </nav>
+
+      <div class="header__actions">
+        <button class="btn btn--ghost" type="button" data-lang-toggle>RU</button>
+        <button class="btn btn--ghost" type="button" data-theme>
+          <span data-lang="ru">Тема</span><span data-lang="en" hidden>Theme</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="content" class="section">
+    <div class="container">
+      <div class="breadcrumbs">
+        <a href="../index.html"><span data-lang="ru">Главная</span><span data-lang="en" hidden>Home</span></a>
+        / <span id="breedBreadcrumbName">…</span>
+      </div>
+
+      <section class="breed-hero">
+        <div class="heroimg">
+          <img id="breedHeroImg" alt="" src="" />
+        </div>
+
+        <div>
+          <span class="kicker"><span id="breedRank">#—</span> • CFA</span>
+          <h1 class="breed-hero__title" id="breedTitle">…</h1>
+          <p class="lead" id="breedIntro">…</p>
+
+          <div class="pager" id="breedPager" aria-label="Pager"></div>
+        </div>
+      </section>
+
+      <section class="blocks">
+        <article class="block">
+          <h3 id="factsTitle">Факты</h3>
+          <ul id="breedFacts"></ul>
+        </article>
+
+        <article class="block">
+          <h3 id="sourcesTitle">Источники</h3>
+          <ul id="breedSources"></ul>
+        </article>
+      </section>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__row">
+      <p class="muted">© <span data-year></span> Cat Atlas</p>
+      <a class="muted" href="../index.html"><span data-lang="ru">К списку</span><span data-lang="en" hidden>Back</span></a>
+    </div>
+  </footer>
+</body>
+</html>

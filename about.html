@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="ru" data-theme="dark">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>О проекте — Cat Atlas</title>
+  <meta name="description" content="Как читать рейтинг популярных пород: источник CFA и принцип формирования списка." />
+
+  <meta property="og:title" content="О проекте — Cat Atlas" />
+  <meta property="og:description" content="Как читать рейтинг: источник CFA и принцип формирования списка." />
+  <meta property="og:type" content="article" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/styles.css" />
+  <script type="module">
+    import { App } from "./assets/app.js";
+    App.boot();
+
+    function seo(){
+      const lang = App.getLang();
+      const title = lang === "ru" ? "О проекте — Cat Atlas" : "About — Cat Atlas";
+      const desc  = lang === "ru"
+        ? "Как читать рейтинг популярных пород: источник CFA и принцип формирования списка."
+        : "How to read the breed ranking: CFA source and how the list is formed.";
+      document.title = title;
+      const md = document.querySelector('meta[name="description"]');
+      if (md) md.setAttribute("content", desc);
+
+      const s = document.getElementById("jsonld");
+      s.textContent = JSON.stringify({
+        "@context":"https://schema.org",
+        "@type":"AboutPage",
+        "name": title,
+        "inLanguage": lang,
+        "about": {
+          "@type":"Thing",
+          "name":"CFA breed popularity ranking",
+          "sameAs":"https://cfa.org/cat-talk/most-popular-breeds-for-2024/"
+        }
+      }, null, 2);
+    }
+
+    seo();
+    document.addEventListener("catatlas:langchange", seo);
+  </script>
+
+  <script type="application/ld+json" id="jsonld">{}</script>
+</head>
+
+<body>
+  <a class="skip" href="#content">Перейти к содержимому</a>
+
+  <header class="header">
+    <div class="container header__row">
+      <a class="brand" href="index.html">
+        <span class="brand__mark" aria-hidden="true"></span>
+        <span class="brand__text">Cat Atlas</span>
+      </a>
+
+      <button class="navbtn" type="button" data-nav-toggle aria-expanded="false" aria-controls="nav">Меню</button>
+
+      <nav class="nav" id="nav" aria-label="Navigation">
+        <a href="index.html">
+          <span data-lang="ru">Топ‑10</span>
+          <span data-lang="en" hidden>Top 10</span>
+        </a>
+        <a href="about.html" aria-current="page">
+          <span data-lang="ru">О проекте</span>
+          <span data-lang="en" hidden>About</span>
+        </a>
+      </nav>
+
+      <div class="header__actions">
+        <button class="btn btn--ghost" type="button" data-lang-toggle>RU</button>
+        <button class="btn btn--ghost" type="button" data-theme>
+          <span data-lang="ru">Тема</span>
+          <span data-lang="en" hidden>Theme</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="content" class="section">
+    <div class="container">
+      <p class="eyebrow">
+        <span data-lang="ru">О проекте</span>
+        <span data-lang="en" hidden>About</span>
+      </p>
+
+      <h1 class="h1">
+        <span data-lang="ru">Как читать рейтинг</span>
+        <span data-lang="en" hidden>How to read the ranking</span>
+      </h1>
+
+      <div class="blocks">
+        <article class="block">
+          <h3 class="h3">
+            <span data-lang="ru">Источник списка</span>
+            <span data-lang="en" hidden>Source</span>
+          </h3>
+          <p>
+            <span data-lang="ru">
+              Список «Топ‑10» на сайте построен по публикации CFA, где рейтинг основан на регистрациях за 2024 календарный год.
+            </span>
+            <span data-lang="en" hidden>
+              The site’s Top 10 list follows a CFA publication where ranking is based on registrations in calendar year 2024.
+            </span>
+          </p>
+          <p class="refs" style="margin-top:10px;">
+            <a href="https://cfa.org/cat-talk/most-popular-breeds-for-2024/" target="_blank" rel="noreferrer">
+              CFA Cat Talk — Most Popular Breeds for 2025 (registrations in 2024)
+            </a>
+          </p>
+        </article>
+
+        <article class="block">
+          <h3 class="h3">
+            <span data-lang="ru">Что означает «популярность»</span>
+            <span data-lang="en" hidden>What “popular” means</span>
+          </h3>
+          <p>
+            <span data-lang="ru">
+              Здесь «популярность» — это именно место в рейтинге CFA по их данным регистраций; это не “опрос” и не статистика всех домашних кошек.
+            </span>
+            <span data-lang="en" hidden>
+              Here, “popular” means rank in CFA’s registration-based list; it is not a public poll and not statistics of all pet cats.
+            </span>
+          </p>
+        </article>
+
+        <article class="block">
+          <h3 class="h3">
+            <span data-lang="ru">Факты на страницах пород</span>
+            <span data-lang="en" hidden>Facts on breed pages</span>
+          </h3>
+          <p>
+            <span data-lang="ru">
+              Факты оформлены как короткие тезисы и снабжены ссылками на страницы/стандарты CFA, чтобы можно было проверить первоисточник.
+            </span>
+            <span data-lang="en" hidden>
+              Facts are presented as short bullets with links to CFA breed pages/standards so you can verify the primary source.
+            </span>
+          </p>
+        </article>
+
+        <article class="block">
+          <h3 class="h3">
+            <span data-lang="ru">Язык</span>
+            <span data-lang="en" hidden>Language</span>
+          </h3>
+          <p>
+            <span data-lang="ru">
+              Переключатель RU/EN меняет текст интерфейса и формулировки фактов (перевод без добавления новых утверждений).
+            </span>
+            <span data-lang="en" hidden>
+              The RU/EN switch changes UI text and fact wording (translation without adding new claims).
+            </span>
+          </p>
+        </article>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__row">
+      <p class="muted">© <span data-year></span> Cat Atlas</p>
+      <a class="muted" href="index.html">
+        <span data-lang="ru">К списку</span><span data-lang="en" hidden>Back to list</span>
+      </a>
+    </div>
+  </footer>
+
+  <script type="module" src="assets/app.js"></script>
+</body>
+</html>

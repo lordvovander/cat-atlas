@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="ru" data-theme="dark">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Популярные породы кошек — Топ‑10 по данным CFA</title>
+  <meta name="description" content="Премиум‑справочник: 10 самых популярных пород кошек по данным CFA (регистрации за 2024 календарный год)." />
+
+  <meta property="og:title" content="Популярные породы кошек — Топ‑10 по данным CFA" />
+  <meta property="og:description" content="Премиум‑справочник: 10 самых популярных пород по данным CFA." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1592194996308-7b43878e84a6?auto=format&fit=crop&w=1600&q=80" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/styles.css" />
+  <script type="module" src="assets/index-page.js"></script>
+</head>
+
+<body>
+  <a class="skip" href="#content">Перейти к содержимому</a>
+
+  <header class="header">
+    <div class="container header__row">
+      <a class="brand" href="index.html" aria-label="Home">
+        <span class="brand__mark" aria-hidden="true"></span>
+        <span class="brand__text">Cat Atlas</span>
+      </a>
+
+      <button class="navbtn" type="button" data-nav-toggle aria-expanded="false" aria-controls="nav">Меню</button>
+
+      <nav class="nav" id="nav" aria-label="Navigation">
+        <a href="index.html" aria-current="page">
+          <span data-lang="ru">Топ‑10</span>
+          <span data-lang="en" hidden>Top 10</span>
+        </a>
+        <a href="about.html">
+          <span data-lang="ru">О проекте</span>
+          <span data-lang="en" hidden>About</span>
+        </a>
+      </nav>
+
+      <div class="header__actions">
+        <button class="btn btn--ghost" type="button" data-lang-toggle>RU</button>
+        <button class="btn btn--ghost" type="button" data-theme>
+          <span data-lang="ru">Тема</span>
+          <span data-lang="en" hidden>Theme</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="content">
+    <section class="hero">
+      <div class="container hero__grid">
+        <div class="hero__copy">
+          <p class="eyebrow">
+            <span data-lang="ru">Премиум‑справочник</span>
+            <span data-lang="en" hidden>Premium guide</span>
+          </p>
+
+          <h1 class="h1">
+            <span data-lang="ru">Самые популярные породы кошек (Топ‑10 по данным CFA)</span>
+            <span data-lang="en" hidden>Most Popular Cat Breeds (CFA Top 10)</span>
+          </h1>
+
+          <p class="lead">
+            <span data-lang="ru">Рейтинг основан на регистрациях CFA за 2024 календарный год (публикация CFA).</span>
+            <span data-lang="en" hidden>Ranking is based on CFA registrations in calendar year 2024 (CFA publication).</span>
+            <a href="https://cfa.org/cat-talk/most-popular-breeds-for-2024/" target="_blank" rel="noreferrer">CFA source</a>.
+          </p>
+        </div>
+
+        <aside class="hero__card">
+          <h2 class="h2">
+            <span data-lang="ru">Поиск</span>
+            <span data-lang="en" hidden>Search</span>
+          </h2>
+          <label class="field">
+            <span class="field__label">
+              <span data-lang="ru">Название породы</span>
+              <span data-lang="en" hidden>Breed name</span>
+            </span>
+            <input class="input" type="search" placeholder="Maine Coon / Мейн‑кун…" data-search />
+          </label>
+          <p class="muted">
+            <span data-lang="ru">Фильтрация по карточкам на главной.</span>
+            <span data-lang="en" hidden>Filters the cards on this page.</span>
+          </p>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container section__head">
+        <h2 class="h2">
+          <span data-lang="ru">Топ‑10</span>
+          <span data-lang="en" hidden>Top 10</span>
+        </h2>
+        <p class="muted">
+          <span data-lang="ru">Откройте породу, чтобы увидеть факты и источники.</span>
+          <span data-lang="en" hidden>Open a breed to see facts and sources.</span>
+        </p>
+      </div>
+
+      <div class="container">
+        <div class="grid" data-grid></div>
+
+        <div class="empty" hidden data-empty>
+          <h3 class="h3" data-empty-title>Ничего не найдено</h3>
+          <p class="muted" data-empty-text>Попробуйте другой запрос.</p>
+          <button class="btn" type="button" data-reset>Сбросить</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__row">
+      <p class="muted">© <span data-year></span> Cat Atlas</p>
+      <a class="muted" href="#" onclick="window.scrollTo({top:0,behavior:'smooth'});return false;">
+        <span data-lang="ru">Наверх</span><span data-lang="en" hidden>Top</span>
+      </a>
+    </div>
+  </footer>
+</body>
+</html>
