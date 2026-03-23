@@ -53,7 +53,7 @@ export const BREEDS = [
     id: "maine-coon",
     rank: 1,
     name: { ru: "Мейн‑кун", en: "Maine Coon" },
-    hero: "https://images.unsplash.com/photo-1592194996308-7b43878e84a6?auto=format&fit=crop&w=2400&q=85",
+    hero: "/cat-atlas/assets/images/maine-coon.jpg",
     intro: {
       ru: "CFA описывает мейн‑куна как крепкую, выносливую кошку, адаптированную к суровому климату; важен баланс без экстремальных черт.",
       en: "CFA describes the Maine Coon as rugged and hardy, adapted to a harsh climate; balance without extremes is emphasized."
@@ -86,7 +86,7 @@ export const BREEDS = [
     id: "ragdoll",
     rank: 2,
     name: { ru: "Рэгдолл", en: "Ragdoll" },
-    hero: "https://images.unsplash.com/photo-1543852786-1cf6624b9987?auto=format&fit=crop&w=2400&q=85",
+    hero: "/cat-atlas/assets/images/ragdoll.jpg",
     intro: {
       ru: "CFA описывает рэгдоллов как loving, gentle, calm и sociable; отмечается игривость и обучаемость.",
       en: "CFA describes Ragdolls as loving, gentle, calm, and sociable; playful and trainable."
@@ -114,7 +114,7 @@ export const BREEDS = [
     id: "persian",
     rank: 3,
     name: { ru: "Персидская", en: "Persian" },
-    hero: "https://images.unsplash.com/photo-1606213651356-0272d8f86d3b?auto=format&fit=crop&w=2400&q=85",
+    hero: "/cat-atlas/assets/images/persian.jpg",
     intro: {
       ru: "CFA пишет, что персы «playful but calm» и хорошо подходят для дома; также подчёркивается высокая потребность в уходе за шерстью.",
       en: "CFA says Persians are playful but calm and well‑suited to home life; they also require significant coat care."
@@ -147,7 +147,7 @@ export const BREEDS = [
     id: "exotic",
     rank: 4,
     name: { ru: "Экзотическая", en: "Exotic" },
-    hero: "https://images.unsplash.com/photo-1518791841217-8f162f1e1131?auto=format&fit=crop&w=2400&q=85",
+    hero: "/cat-atlas/assets/images/exotic.jpg",
     intro: {
       ru: "CFA описывает экзотов как quiet, loyal и adaptable companions; отмечается мнение, что они могут быть немного более активными и игривыми, чем персы.",
       en: "CFA describes Exotics as quiet, loyal, adaptable companions; some consider them a bit more active and playful than Persians."
@@ -170,7 +170,7 @@ export const BREEDS = [
     id: "devon-rex",
     rank: 5,
     name: { ru: "Девон‑рекс", en: "Devon Rex" },
-    hero: "https://images.unsplash.com/photo-1548366086-7f1b76106622?auto=format&fit=crop&w=2400&q=85",
+    hero: "/cat-atlas/assets/images/devon-rex.jpg",
     intro: {
       ru: "CFA подчёркивает «эльфийскую» внешность девонов с большими глазами и ушами и описывает их как очень ориентированных на человека.",
       en: "CFA highlights the Devon’s elfin look with large eyes and ears and describes them as very people‑oriented."
@@ -198,7 +198,7 @@ export const BREEDS = [
     id: "abyssinian",
     rank: 6,
     name: { ru: "Абиссинская", en: "Abyssinian" },
-    hero: "https://images.unsplash.com/photo-1511044568932-338cba0ad803?auto=format&fit=crop&w=2400&q=85",
+    hero: "/cat-atlas/assets/images/abyssinian.jpg",
     intro: {
       ru: "CFA описывает абиссинцев как активных, любознательных и сообразительных, которым нужно внимание и которые не любят одиночество.",
       en: "CFA describes Abyssinians as active, curious, intelligent, attention‑seeking cats that dislike being alone."
@@ -221,7 +221,7 @@ export const BREEDS = [
     id: "british-shorthair",
     rank: 7,
     name: { ru: "Британская короткошерстная", en: "British Shorthair" },
-    hero: "https://images.unsplash.com/photo-1555685812-4b943f1cb0eb?auto=format&fit=crop&w=2400&q=85",
+    hero: "/cat-atlas/assets/images/british-shorthair.jpg",
     intro: {
       ru: "CFA описывает британцев как спокойных и «quiet cats» и отмечает их привязанность к семье.",
       en: "CFA describes British Shorthairs as calm, quiet cats and notes their family attachment."
@@ -244,7 +244,7 @@ export const BREEDS = [
     id: "siberian",
     rank: 8,
     name: { ru: "Сибирская", en: "Siberian" },
-    hero: "https://images.unsplash.com/photo-1526336024174-e58f5cdd8e13?auto=format&fit=crop&w=2400&q=85",
+    hero: "/cat-atlas/assets/images/siberian.jpg",
     intro: {
       ru: "В статье CFA сказано, что первые упоминания о сибирской породе относятся примерно к 1000 году н. э., и что это исконно русская порода из сурового климата Сибири.",
       en: "A CFA article says the first mentions of the Siberian breed date to about 1000 A.D., describing it as an indigenous Russian breed from Siberia’s harsh climate."
@@ -272,7 +272,7 @@ export const BREEDS = [
     id: "sphynx",
     rank: 9,
     name: { ru: "Сфинкс", en: "Sphynx" },
-    hero: "https://images.unsplash.com/photo-1536590158209-e9d615d525e0?auto=format&fit=crop&w=2400&q=85",
+    hero: "/cat-atlas/assets/images/sphynx.jpg",
     intro: {
       ru: "CFA пишет, что сфинксы не полностью лысые; кожа тёплая и мягкая на ощупь, «как персик/нектарин».",
       en: "CFA notes Sphynx are not completely hairless; the skin feels warm and soft, like a peach/nectarine."
@@ -300,7 +300,7 @@ export const BREEDS = [
     id: "russian-blue",
     rank: 10,
     name: { ru: "Русская голубая", en: "Russian Blue" },
-    hero: "https://images.unsplash.com/photo-1494256997604-768d1f608cac?auto=format&fit=crop&w=2400&q=85",
+    hero: "/cat-atlas/assets/images/russian-blue.jpg",
     intro: {
       ru: "CFA указывает серебристо‑серую короткую шерсть и изумрудно‑зелёные глаза, а также отмечает, что породе не нужен сложный уход.",
       en: "CFA describes the silver‑gray short coat and vivid green eyes and notes they don’t require complicated grooming."
